@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz do Grêmio</title>
+        <meta name="description" content="Um quiz do Grêmio">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Quiz do Grêmio</h1>
+            <p>Teste seu conhecimento de Grêmio!</p>
+        </header>
+        <main>
+            <section>
+                <h2>Sobre o quiz do Grêmio</h2>
+                <p>Esse quiz foi feito para ver se você é <em>fã</em> do <strong>Grêmio</strong></p>
+                <p><abbr title="Grêmio Foot-Ball Porto Alegrense">Grêmio</abbr> é um time com grande história e muitos títulos</p>
+            </section>
+            <form id="quiz-form">
+                <!--Pergunta 1-->
+                <section>
+                    <h2>1. Quais são as cores oficiais do Grêmio?</h2>
+                    <input type="radio" id="p1a" name="pergunta1" value="azul">
+                    <label for="p1a">Azul, Preto e Branco</label><br>
+                    <input type="radio" id="p1b" name="pergunta1" value="verde">
+                    <label for="p1b">Verde, Preto e Branco</label><br>
+                    <input type="radio" id="p1c" name="pergunta1" value="vermelho">
+                    <label for="p1c">Vermelho e Branco</label><br>
+                </section>
+                
+                <!--Pergunta 2-->
+                <section>
+                    <h2>2. Em que ano o Grêmio foi fundado?</h2>
+                    <select id="p2" name="pergunta2">
+                        <option value="">Selecione o ano</option>
+                        <option value="1903">1903</option>
+                        <option value="1910">1910</option>
+                        <option value="1921">1921</option>
+                        <option value="1930">1930</option>
+                    </select>
+                </section>
+                
+                <!--Pergunta 3-->
+                <section>
+                    <h2>3. Qual destes títulos o Grêmio NÃO conquistou?</h2>
+                    <input type="radio" id="p3a" name="pergunta3" value="mundial">
+                    <label for="p3a">Copa do Mundo de Clubes da FIFA</label><br>
+                    <input type="radio" id="p3b" name="pergunta3" value="libertadores">
+                    <label for="p3b">Copa Libertadores da América</label><br>
+                    <input type="radio" id="p3c" name="pergunta3" value="premier">
+                    <label for="p3c">Premier League</label><br>
+                </section>
+                
+                <!--Pergunta 4-->
+                <section>
+                    <h2>4. Qual destes jogadores é considerado o maior ídolo do Grêmio?</h2>
+                    <input type="radio" id="p4a" name="pergunta4" value="renato">
+                    <label for="p4a">Renato Portaluppi (Renato Gaúcho)</label><br>
+                    <input type="radio" id="p4b" name="pergunta4" value="ronaldinho">
+                    <label for="p4b">Messi</label><br>
+                    <input type="radio" id="p4c" name="pergunta4" value="everton">
+                    <label for="p4c">Éverton Ribeiro</label><br>
+                </section>
+                
+                <!--Pergunta 5-->
+                <section>
+                    <h2>5. Qual é o estádio do Grêmio?</h2>
+                    <input type="radio" id="p5a" name="pergunta5" value="arena">
+                    <label for="p5a">Arena do Grêmio</label><br>
+                    <input type="radio" id="p5b" name="pergunta5" value="beira">
+                    <label for="p5b">Estádio Beira-Rio</label><br>
+                    <input type="radio" id="p5c" name="pergunta5" value="olimpico">
+                    <label for="p5c">Estádio Olímpico</label><br>
+                </section>
+                
+                <!--Pergunta 6-->
+                <section>
+                    <h2>6. Qual destes jogadores JÁ jogou no Grêmio?</h2>
+                    <div>
+                        <input type="checkbox" id="p6a" name="pergunta6" value="ronaldinho">
+                        <label for="p6a">Ronaldinho Gaúcho</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="p6b" name="pergunta6" value="braithwaite">
+                        <label for="p6b">Martin Braithwaite</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="p6c" name="pergunta6" value="neymar">
+                        <label for="p6c">Neymar</label>
+                    </div>
+                </section>
+                
+                <!--Pergunta 7-->
+                <section>
+                    <h2>7. Quantas vezes o Grêmio venceu a Copa Libertadores?</h2>
+                    <input type="radio" id="p7a" name="pergunta7" value="1">
+                    <label for="p7a">1 vez</label><br>
+                    <input type="radio" id="p7b" name="pergunta7" value="3">
+                    <label for="p7b">3 vezes</label><br>
+                    <input type="radio" id="p7c" name="pergunta7" value="2">
+                    <label for="p7c">2 vezes</label><br>
+                </section>
+                
+                <!--Pergunta 8-->
+                <section>
+                    <h2>8. Qual é o apelido da torcida do Grêmio?</h2>
+                    <input type="text" id="p8" name="pergunta8" placeholder="Digite o apelido">
+                </section>
+                
+                <section>
+                    <button type="submit" id="submit-btn">Enviar Respostas</button>
+                    <button type="reset" id="reset-btn">Limpar Respostas</button>
+                </section>
+            </form>
+            
+            <!--Tabela de pontuação-->
+            <section>
+                <h2>Tabela de pontuação</h2>
+                <table border="1">
+                    <tr>
+                        <td>0-2</td>
+                        <td>Você não sabe nada sobre o Grêmio</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Você sabe um pouco sobre o Grêmio</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Você sabe muito sobre o Grêmio</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Você é um verdadeiro gremista!</td>
+                    </tr>
+                </table>            
+            </section>
+            
+            <!--Lista de resposta-->
+            <section>
+                <h2>Gabarito</h2>
+                <details>
+                    <summary>Veja as respostas</summary>
+                    <ol>
+                        <li>Azul, Preto e Branco</li>
+                        <li>1903</li>
+                        <li>Premier League</li>
+                        <li>Renato Portaluppi (Renato Gaúcho)</li>
+                        <li>Arena do Grêmio</li>
+                        <li>Ronaldinho Gaúcho e Martin Braithwaite</li>
+                        <li>3 vezes</li>
+                        <li>Imortal Tricolor</li>
+                    </ol>
+                </details>
+            </section>
+        </main>
+        <footer>
+            <p>© 2025 Quiz do Grêmio. Todos os direitos reservados.</p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
